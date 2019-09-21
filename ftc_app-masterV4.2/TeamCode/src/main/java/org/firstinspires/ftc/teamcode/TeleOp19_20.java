@@ -30,11 +30,16 @@ public class TeleOp19_20 extends LinearOpMode
 
         while (opModeIsActive())
         {
+            //telemetry.addData("GrabberR= ",h.servoGrabberR.getPosition());
+            //telemetry.addData("GrabberL= ",h.servoGrabberL.getPosition());
+            //telemetry.addData("Winch= ", h.motorWinch.getCurrentPosition());
+            //telemetry.update();
+
             h.driveOmniDir(gamepad1.left_stick_x, gamepad1.left_stick_y, gamepad1.right_stick_x);
 
             if (gamepad1.dpad_up)
             {
-                h.motorWinch.setPower(0.5);
+                h.motorWinch.setPower(1);
             }
             if (gamepad1.dpad_down)
             {
@@ -47,13 +52,13 @@ public class TeleOp19_20 extends LinearOpMode
 
             if (gamepad1.a)
             {
-                h.servoGrabberL.setPosition(.7);
-                h.servoGrabberR.setPosition(.7);
+                h.servoGrabberL.setPosition(.4);
+                h.servoGrabberR.setPosition(.4);
             }
             if (gamepad1.b)
             {
-                h.servoGrabberL.setPosition(.5);
-                h.servoGrabberR.setPosition(.5);
+                h.servoGrabberL.setPosition(0.05);
+                h.servoGrabberR.setPosition(0.05);
             }
 
  

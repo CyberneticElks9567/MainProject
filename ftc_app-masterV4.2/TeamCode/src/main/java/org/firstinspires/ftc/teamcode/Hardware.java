@@ -32,7 +32,7 @@ public class Hardware extends LinearOpMode
     ModernRoboticsI2cGyro MRGyro;
     ModernRoboticsI2cRangeSensor MRRange;
 
-    private HardwareMap aMap;
+    //private HardwareMap aMap;
     DcMotor.RunMode initialMode = null;
 
     int driveTime;
@@ -40,6 +40,7 @@ public class Hardware extends LinearOpMode
     public int currentDegrees;
 
     private Telemetry telemetry;
+
 
     @Override
     public void runOpMode()
@@ -56,31 +57,32 @@ public class Hardware extends LinearOpMode
         motorBackRight = aMap.dcMotor.get("motorBackRight");
         motorBackLeft = aMap.dcMotor.get("motorBackLeft");
         motorFrontLeft = aMap.dcMotor.get("motorFrontLeft");
-        motorArm = aMap.dcMotor.get("motorArm");
+        //motorArm = aMap.dcMotor.get("motorArm");
         motorWinch = aMap.dcMotor.get("motorWinch");
-        motorLift = aMap.dcMotor.get("motorLift");
-        motorSpinner = aMap.dcMotor.get("motorSpinner");
+        //motorLift = aMap.dcMotor.get("motorLift");
+        //motorSpinner = aMap.dcMotor.get("motorSpinner");
 
-        markerDropServo = aMap.servo.get("markerDropServo");
-        bucketFlapServo = aMap.servo.get("bucketFlapServo");
+        //markerDropServo = aMap.servo.get("markerDropServo");
+        //bucketFlapServo = aMap.servo.get("bucketFlapServo");
         servoGrabberL = aMap.servo.get("servoGrabberL");
-        servoGrabberR = aMap .servo.get("ServoGrabberR");
+        servoGrabberR = aMap.servo.get("servoGrabberR");
 
-        MRGyro = aMap.get(ModernRoboticsI2cGyro.class, "gyro");
-        MRRange = aMap.get(ModernRoboticsI2cRangeSensor.class, "MRRange");
+        //MRGyro = aMap.get(ModernRoboticsI2cGyro.class, "gyro");
+        //MRRange = aMap.get(ModernRoboticsI2cRangeSensor.class, "MRRange");
 
-        motorArm.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
-        motorArm.setMode(DcMotor.RunMode.RUN_TO_POSITION);
-        motorArm.setDirection(DcMotorSimple.Direction.FORWARD);
+        //motorArm.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
+        //motorArm.setMode(DcMotor.RunMode.RUN_TO_POSITION);
+        //motorArm.setDirection(DcMotorSimple.Direction.FORWARD);
 
-        motorWinch.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
-        motorWinch.setMode(DcMotor.RunMode.RUN_TO_POSITION);
+        //motorWinch.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
+        //motorWinch.setMode(DcMotor.RunMode.RUN_TO_POSITION);
         motorWinch.setZeroPowerBehavior(DcMotor.ZeroPowerBehavior.BRAKE);
 
-        motorLift.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
-        motorLift.setMode(DcMotor.RunMode.RUN_TO_POSITION);
+        //motorLift.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
+        //motorLift.setMode(DcMotor.RunMode.RUN_TO_POSITION);
 
-        motorSpinner.setMode(DcMotor.RunMode.RUN_WITHOUT_ENCODER);
+        //motorSpinner.setMode(DcMotor.RunMode.RUN_WITHOUT_ENCODER);
+        motorWinch.setMode(DcMotor.RunMode.RUN_WITHOUT_ENCODER);
 
         motorFrontRight.setDirection(DcMotorSimple.Direction.FORWARD);
         motorBackRight.setDirection(DcMotorSimple.Direction.FORWARD);

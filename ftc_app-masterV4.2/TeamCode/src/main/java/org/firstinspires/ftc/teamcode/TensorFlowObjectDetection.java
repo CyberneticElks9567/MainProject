@@ -141,24 +141,6 @@ public class TensorFlowObjectDetection extends LinearOpMode
         waitForStart();
 
 
-        //START
-        /*
-        h.motorLift.setTargetPosition(9600);
-        h.motorLift.setPower(1);
-
-        try{
-            Thread.sleep(6000);
-        }catch(Exception e){}
-
-
-        h.strafe(false,2,0.5);
-
-        h.motorLift.setTargetPosition(0);
-
-        h.strafe(true,2,0.5);
-        */
-        h.drive(true,10,0.5);
-
 
 
         if (opModeIsActive()) {
