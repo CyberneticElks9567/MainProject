@@ -37,7 +37,7 @@ public class TeleOp19_20 extends LinearOpMode
 
             h.driveOmniDir(gamepad1.left_stick_x, gamepad1.left_stick_y, gamepad1.right_stick_x);
 
-            if (gamepad1.dpad_up)
+            /*if (gamepad1.dpad_up)
             {
                 h.motorWinch.setPower(1);
             }
@@ -48,7 +48,7 @@ public class TeleOp19_20 extends LinearOpMode
             if(!gamepad1.dpad_up && !gamepad1.dpad_down)
             {
                 h.motorWinch.setPower(0);
-            }
+            }*/
 
             if (gamepad1.a)
             {

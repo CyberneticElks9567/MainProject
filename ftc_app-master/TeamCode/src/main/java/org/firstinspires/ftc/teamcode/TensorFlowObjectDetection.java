@@ -140,6 +140,8 @@ public class TensorFlowObjectDetection extends LinearOpMode
 
         waitForStart();
 
+        
+
 
 
 
@@ -162,6 +164,8 @@ public class TensorFlowObjectDetection extends LinearOpMode
                         int goldMineralX = -1;
                         int silverMineral1X = -1;
                         int silverMineral2X = -1;
+
+
 
 
                         for (Recognition recognition : updatedRecognitions) {
