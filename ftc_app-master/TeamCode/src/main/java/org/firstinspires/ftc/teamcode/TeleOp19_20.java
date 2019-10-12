@@ -48,7 +48,7 @@ public class TeleOp19_20 extends LinearOpMode
             if(!gamepad1.dpad_up && !gamepad1.dpad_down)
             {
                 h.motorWinch.setPower(0);
-            }*/
+            }
 
             if (gamepad1.a)
             {
@@ -59,7 +59,7 @@ public class TeleOp19_20 extends LinearOpMode
             {
                 h.servoGrabberL.setPosition(0.05);
                 h.servoGrabberR.setPosition(0.05);
-            }
+            }*/
 
  
         }
